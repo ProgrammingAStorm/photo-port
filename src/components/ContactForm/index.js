@@ -34,7 +34,7 @@ function ContactForm() {
 
     return (
         <section>
-            <h1>Contact me</h1>
+            <h1 data-testid="contact">Contact me</h1>
 
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
@@ -58,7 +58,7 @@ function ContactForm() {
                     <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
                 </div>
 
-                <button type="submit">Submit</button>
+                <button type="submit" data-testid="submit">Submit</button>
             </form>
         </section>
     );
